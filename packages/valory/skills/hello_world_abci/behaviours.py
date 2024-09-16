@@ -189,7 +189,13 @@ class PrintMessageBehaviour(HelloWorldABCIBaseBehaviour, ABC):
             self.context.agent_address
             == self.synchronized_data.most_voted_keeper_address
         ):
-            message = self.params.hello_world_string
+            owner_address = self.params.agent_owner_address
+            message = (
+                self.params.hello_world_string
+                + ". "
+                + f"The owner address is {owner_address}"
+            )
+
         else:
             message = ":|"
 

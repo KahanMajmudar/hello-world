@@ -7,7 +7,7 @@ license: Apache-2.0
 fingerprint:
   README.md: bafybeiapubcoersqnsnh3acia5hd7otzt7kjxekr6gkbrlumv6tkajl6jm
 fingerprint_ignore_patterns: []
-agent: valory/hello_world:0.1.0:bafybeihtmp45mbfs5tyzrgxfoimh552on6dif42ifqidifait3ej2m5zvq
+agent: valory/hello_world:0.1.0:bafybeicsajkhrfwf2r5u5bhp4j7jsaxxuzy6d5sitysy72cyocsri2j5ui
 number_of_agents: 4
 deployment: {}
 ---
@@ -31,6 +31,7 @@ type: skill
         share_tm_config_on_startup: ${SHARE_TM_CONFIG_ON_STARTUP:bool:false}
         on_chain_service_id: ${ON_CHAIN_SERVICE_ID:int:null}
         setup: *id001
+        owner_address: ${OWNER_ADDRESS_0:str:0x0000000000000000000000000000000000000000}
         hello_world_message: ${HELLO_WORLD_STRING_0:str:HELLO_WORLD! (from Agent 0)}
         reset_pause_duration: ${RESET_PAUSE_DURATION:int:10}
     benchmark_tool:
@@ -43,6 +44,7 @@ type: skill
         share_tm_config_on_startup: ${SHARE_TM_CONFIG_ON_STARTUP:bool:false}
         on_chain_service_id: ${ON_CHAIN_SERVICE_ID:int:null}
         setup: *id001
+        owner_address: ${OWNER_ADDRESS_1:str:0x1111111111111111111111111111111111111111}
         hello_world_message: ${HELLO_WORLD_STRING_1:str:HELLO_WORLD! (from Agent 1)}
         reset_pause_duration: ${RESET_PAUSE_DURATION:int:10}
     benchmark_tool:
@@ -55,6 +57,7 @@ type: skill
         share_tm_config_on_startup: ${SHARE_TM_CONFIG_ON_STARTUP:bool:false}
         on_chain_service_id: ${ON_CHAIN_SERVICE_ID:int:null}
         setup: *id001
+        owner_address: ${OWNER_ADDRESS_2:str:0x2222222222222222222222222222222222222222}
         hello_world_message: ${HELLO_WORLD_STRING_2:str:HELLO_WORLD! (from Agent 2)}
         reset_pause_duration: ${RESET_PAUSE_DURATION:int:10}
     benchmark_tool:
@@ -67,6 +70,7 @@ type: skill
         share_tm_config_on_startup: ${SHARE_TM_CONFIG_ON_STARTUP:bool:false}
         on_chain_service_id: ${ON_CHAIN_SERVICE_ID:int:null}
         setup: *id001
+        owner_address: ${OWNER_ADDRESS_3:str:0x3333333333333333333333333333333333333333}
         hello_world_message: ${HELLO_WORLD_STRING_3:str:HELLO_WORLD! (from Agent 3)}
         reset_pause_duration: ${RESET_PAUSE_DURATION:int:10}
     benchmark_tool:
